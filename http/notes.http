@@ -1,0 +1,10 @@
+### Add notes
+POST http://localhost:3001/notes
+Content-Type: application/json
+
+{
+  "note": "Nota 2"
+}
+
+### Get notes
+GET http://localhost:3001/notes
