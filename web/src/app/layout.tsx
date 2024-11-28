@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         cz-shortcut-listen="true"
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-lvw h-lvh flex items-center justify-center`}
       >
         {children}
       </body>

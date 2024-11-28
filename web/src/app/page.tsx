@@ -1,15 +1,17 @@
 'use client'
 
-import Notes from '@/views/notes'
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClient } from './lib/react-query'
+import CreateRoomForm from '@/components/CreateRoom'
+import EnjoyRoom from '@/components/EnjoyRoom'
 
-export default function Home() {
+function HomePage() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <main className="w-lvw h-lvh flex items-center justify-center">
-        <Notes />
-      </main>
-    </QueryClientProvider>
+    <main>
+      <div className="w-full max-w-xs flex flex-col gap-4">
+        <CreateRoomForm />
+        <EnjoyRoom />
+      </div>
+    </main>
   )
 }
+
+export default HomePage
